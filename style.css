@@ -1,0 +1,228 @@
+@font-face {
+    font-family:Kalam;
+    src: url(/fonts/Kalam.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kalam";
+}
+header{
+    background-image: url(/images/backImg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vh; 
+    z-index: -1;
+}
+/*---nav---*/
+.navContainer{
+    position: fixed;
+    height: 100vh;
+}
+nav{
+    width:20%;
+    background-color: #111010;
+}
+.profilePic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    padding-top: 20px;
+    row-gap: 10px;
+}
+.profilePic img{
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 50px 5px #493b3b;
+    border: 3px solid rgba(255, 255, 255, 0.116);
+}
+.profilePic h1{
+    color:#fff;
+    font-weight: 300;
+}
+.socialmedia{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+.socialmedia a img{
+    height: 35px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 50px 5px #493b3b;
+}
+.socialmedia a img:hover{
+    height: 40px;
+    z-index: 1;
+    transition: ease-in-out 0.1s;
+}
+.navOptions ul{
+    list-style-type: none;  
+}
+.navOptions ul li a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.navOptions ul li a:hover{
+    text-decoration: underline;
+}
+.navOptions ul li{
+    padding-left: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*---intro---*/
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 20%;
+}
+.info{
+    height: 80vh;
+    z-index: 1;
+    background-color: #b6aeae80;
+    width: 90%;
+    border-radius: 100px;
+    padding: 50px;
+    white-space: wrap;
+    overflow:hidden;
+
+}
+.info > h1{
+    font-size: 80vx;
+    font-weight: 200;
+}
+.info > p{
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/*--education CSS--*/
+.education{
+    margin-left: 20%;
+    height: 100vh;
+    background-image: url(images/educationBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    white-space: wrap;
+    overflow:hidden;
+    
+}
+.education > h1{
+    padding: 5px;
+    font-size: 5em;
+    text-align: center;
+    font-weight: 200;
+}
+.education ul{
+    padding-left: 50px;
+    width: 50%;
+}
+.education ul li{
+    height: 25vh;
+}
+/*--Skills Section--*/
+.skillsSection{
+    margin-left: 20%;
+    height: 100vh;
+    background-image: url(images/skillbackpic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+}
+.skillsContainer{
+    height: 80vh;
+    width: 50%;
+    background-color: #ffffff25;
+    margin-left: 70px ;
+    border-radius: 100px;
+    padding-left: 50px;
+    white-space: wrap;
+    overflow:hidden;
+}
+.skillsContainer > h1{
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 5px;
+}
+.skillicons{
+    list-style-type: none;
+}
+.skillicons li img{
+    height: 5vh;
+    border-radius: 5px;
+
+}
+.skillicons li{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 5px;
+}
+.skillicons li span{
+    font-weight: bold;
+}
+/*--Experience Section--*/
+.experienceContainer{
+    white-space: wrap;
+    overflow: hidden;
+}
+.experiencePage{
+    margin-left: 20%;
+    height: 100vh;
+    background-image: url(images/workExpImg.avif);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.experiencePage div{
+    height: 90vh;
+    width: 80%;
+    background-color: #d8d5d5;
+    border-radius: 50px 25px; 
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+.experiencePage > div h1{
+    padding: 10px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+}
+.experiencePage > div ul{
+    margin-left: 50px;
+}
+/*contact style*/
+.contact{
+    height: 655px;
+    margin-left: 20%;
+    background-image: url(images/contactBackImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactContainer{
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+    white-space: wrap;
+    background-color: #fff;
+}
+.contactContainer ul li {
+    padding: 5px;
+}
