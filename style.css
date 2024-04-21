@@ -85,6 +85,9 @@ nav{
     align-items: center;
     width: 80%;
     margin-left: 20%;
+    background-image: url(./images/backImg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .info{
     height: 80vh;
